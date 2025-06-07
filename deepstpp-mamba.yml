@@ -1,0 +1,25 @@
+name: deepstpp-mamba
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - scikit-learn
+  - tqdm
+  - einops
+  - ipykernel
+  - jupyter
+  - pip:
+      - torch==2.2.2+cu121
+      - torchvision==0.17.2+cu121
+      - torchaudio==2.2.2+cu121
+      - mamba-ssm
+
